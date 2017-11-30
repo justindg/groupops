@@ -1,0 +1,468 @@
+body {
+  font-family: "Roboto";
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+b {
+  font-weight: 500;
+}
+
+a {
+  color: #54C2E8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+p {
+  font-weight: 100;
+  margin: 0;
+  margin: 10px 0;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  line-height: 1.3em;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+table {
+
+}
+
+#banner {
+  color: white;
+  overflow: auto;
+  background: url('img/banner_home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-overlay {
+  padding: 30px 50px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.banner-table {
+  border-collapse: collapse;
+}
+
+.banner-table tbody tr td {
+  vertical-align: middle;
+}
+
+.banner-accent {
+  height: 10px;
+  border-left: 300px solid #54C2E8;
+  background-color: #FFCC00;
+}
+
+.banner-back {
+  /*float: left;*/
+  display: none;
+  padding-right: 20px;
+}
+
+.banner-back:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.banner-title-container {
+  float: left;
+  overflow: auto;
+}
+
+.banner-title {
+  font-weight: 500;
+  font-size: 2.7em;
+  /*margin-bottom: 5px;*/
+}
+
+.banner-subtitle {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+#home {
+  padding: 20px 20px;
+  display: none;
+}
+
+
+#page2 {
+  /*display: none;*/
+  overflow: auto;
+  padding: 20px 20px;
+}
+
+
+.home-content {
+  padding: 0 10%;
+  text-align: center;
+}
+
+.models-table {
+  padding: 0px 0;
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.models-table tbody tr td {
+  padding: 0;
+  width: 16.66%;
+  vertical-align: top;
+  box-shadow: 0px 2px 4px grey;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.model {
+
+}
+
+.model-leadership {
+  background: url('img/leadership.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.model-rcd {
+  background: url('img/rcd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.model-aroc {
+  background: url('img/aroc.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.model-process {
+  background: url('img/process_architecture.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.model-analytics {
+  background: url('img/analytics.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.model-operations {
+  background: url('img/operations.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.model-image {
+  height: 100px;
+  background-color: red;
+}
+
+.model-image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.model:hover {
+  cursor: pointer;
+}
+
+.model:hover > .model-more {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.model-text {
+  padding: 5px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.model-more {
+  margin-top: 20px;
+  color: #54C2E8;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.page2-intro {
+  min-height: 180px;
+}
+
+.h1-model-title {
+  text-align: center;
+  padding: 0 10%;
+}
+
+.p-model-description {
+  text-align: center;
+  padding: 0 15%;
+}
+
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.main-table tbody tr th {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: bottom;
+  border-bottom: 1px solid black;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-th {
+  padding-bottom: 10px;
+  border-bottom: 5px solid;
+  border-color: white;
+  box-sizing: border-box;
+}
+
+.main-th-selected {
+  border-bottom: 5px solid #FFCC00;
+}
+
+.main-th:hover {
+  border-bottom: 5px solid #FFCC00;
+  cursor: pointer;
+}
+
+.main-table tbody tr td {
+  text-align: center;
+  padding: 10px 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 14.285%;
+  margin: 0;
+}
+
+.main-td {
+  text-align: center;
+}
+
+.main-td-selected {
+  background-color: rgba(0, 194, 228, 0.2);
+}
+
+.main-item-disabled {
+  background-color: #54C2E8;
+  opacity: 0.5;
+}
+
+.main-item {
+  border-radius: 8px;
+  background-color: #54C2E8;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 80px;
+  width: 120px;
+  margin: 5px auto;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px grey;
+}
+
+.main-item:hover {
+  box-shadow: 0px 2px 10px grey;
+  cursor: pointer;
+}
+
+.main-item > div {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-size: 0.9em;
+}
+
+.main-item-empty {
+  border-radius: 8px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 80px;
+  width: 100px;
+  margin: 5px auto;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.main-item-empty > div {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+
+#role_description {
+  background-color: #eee;
+  box-sizing: border-box;
+  overflow: auto;
+  text-align: center;
+  display: none;
+  margin-top: 20px;
+}
+
+#role_description > div {
+
+}
+
+.role-description-title {
+  color: white;
+  overflow: auto;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #555;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.role-title-text {
+  float: left;
+  font-size: 1.8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  line-height: 50px;
+}
+
+.role-download1 {
+  float: right;
+  display: inline-block;
+  background-color: #FFCC00;
+  text-align: center;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+}
+
+.role-download2 {
+  display: inline-block;
+  background-color: #FFCC00;
+  text-align: center;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.role-header {
+  padding: 20px 40px 20px 40px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #54C2E8;
+  margin: 0 40px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.role-body {
+  font-weight: 100;
+  font-size: 1em;
+  color: black;
+  padding: 20px 40px;
+  background-color: white;
+  margin: 0 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.page2-footer {
+  height: 80px;
+  background: #555;
+  position: relative;
+}
+
+.page2-footer-top {
+  position: absolute;
+  right: 40px;
+  top: -20px;
+  padding: 20px 30px;
+  text-align: center;
+  background-color: #FFCC00;
+  cursor: pointer;
+}
+
+.page2-footer-top:hover {
+  background-color: #54C2E8;
+}
+
+.capability-body {
+  overflow: auto;
+}
+
+.future-body {
+  overflow: auto;
+}
+
+.feeder-col-header {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.feeder-col {
+  float: left;
+  width: 50%;
+}
+
+.future-col {
+  float: left;
+  width: 50%;
+}
