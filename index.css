@@ -300,7 +300,7 @@ table {
   height: 80px;
   width: 120px;
   margin: 5px auto;
-  display: inline-block;
+  /*display: inline-block;*/
   box-sizing: border-box;
   box-shadow: 0px 2px 4px grey;
 }
