@@ -14,6 +14,14 @@ $('.model').on('click', function() {
   $('.banner-subtext').hide();
 });
 
+var goBackFromSearch = function() {
+  $('#page2').show();
+  $('#search').hide();
+  $('.banner-subtitle').text("Career Model");
+  $('.banner-title').text("Group Operations");
+  currentPage = "page2";
+}
+
 $('.banner-back').on('click', function() {
   if (currentPage==="page2") {
     $('#home').show();
@@ -24,11 +32,7 @@ $('.banner-back').on('click', function() {
     $('.banner-title').text("Group Operations");
     currentPage = "home";
   } else {
-    $('#page2').show();
-    $('#search').hide();
-    $('.banner-subtitle').text("Career Model");
-    $('.banner-title').text("Group Operations");
-    currentPage = "page2";
+    goBackFromSearch();
   }
 });
 
@@ -574,5 +578,30 @@ $('.main-item').on('click', function() {
   } else {
     $('#role_description').show();
     scrollToRoleDescription();
+  }
+});
+
+$('.search-family-go').on('click', function() {
+  if ($(this).hasClass('search-o1')) {
+    goBackFromSearch();
+    $('.o1').click();
+  } else if ($(this).hasClass('search-o2')) {
+    goBackFromSearch();
+    $('.o2').click();
+  } else if ($(this).hasClass('search-o3')) {
+    goBackFromSearch();
+    $('.o3').click();
+  } else if ($(this).hasClass('search-o4')) {
+    goBackFromSearch();
+    $('.o4').click();
+  } else if ($(this).hasClass('search-o5')) {
+    goBackFromSearch();
+    $('.o5').click();
+  } else if ($(this).hasClass('search-o6')) {
+    goBackFromSearch();
+    $('.o6').click();
+  } else if ($(this).hasClass('search-o7')) {
+    goBackFromSearch();
+    $('.o7').click();
   }
 });

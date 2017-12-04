@@ -563,7 +563,7 @@ table {
   height: 50px;
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  display: none;
+  /*display: none;*/
   cursor: pointer;
 }
 
