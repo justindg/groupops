@@ -304,14 +304,8 @@ table {
   height: 80px;
   width: 120px;
   margin: 5px auto;
-  /*display: inline-block;*/
   box-sizing: border-box;
   box-shadow: 0px 2px 4px grey;
-}
-
-.main-item:hover {
-  box-shadow: 0px 2px 10px grey;
-  cursor: pointer;
 }
 
 .main-item > div {
@@ -323,7 +317,12 @@ table {
   box-sizing: border-box;
   transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  font-size: 0.9em;
+  font-size: 0.8em;
+}
+
+.main-item:hover {
+  box-shadow: 0px 2px 10px grey;
+  cursor: pointer;
 }
 
 .main-item-empty {
@@ -333,9 +332,8 @@ table {
   text-align: center;
   position: relative;
   height: 80px;
-  width: 100px;
+  width: 120px;
   margin: 5px auto;
-  display: inline-block;
   box-sizing: border-box;
 }
 

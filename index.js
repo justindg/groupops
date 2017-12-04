@@ -33,7 +33,11 @@ $('.banner-back').on('click', function() {
 });
 
 $('.page2-footer-top').on('click', function() {
-  window.location.href = "#page2";
+  if (currentPage==="page2") {
+    window.location.href = "#page2";
+  } else {
+    window.location.href = "#banner";
+  }
 });
 
 var m1 = $('.m1');
@@ -255,18 +259,30 @@ var updateRoleDescription = function(d) {
   $('.feeder-content').html(d.feeder);
   $('.capability-content1').html(d.capability);
   $('.capability-content2').html(d.capability2);
+
+  $('.role-download1').on('click', function() {
+    console.log(d.link);
+    window.open = d.link;
+  });
+
+  $('.role-download2').on('click', function() {
+    console.log(d.link);
+    window.open = d.link;
+  });
 };
 
 var scrollToRoleDescription = function() {
   window.location.href = '#role_description';
 }
 
+var path = window.location.pathname;
+
 var leadership = {
   executive_manager : {
     family: MODEL_1,
     obj: $('.l1'),
     title: "Executive Manager",
-    link: '',
+    link: path + '/Documents/Leadership_Executive_Manager.pdf',
     purpose: "<p>The emphasis of this role is the effective running of the department from a Customer Experience, Operational Excellence and people management point of view. This role connects with stakeholders inside and outside the group as a business owner. This is a functional manager role focused on  delivering results in an environment in transformation.</p>",
     responsibility: "<p>You set the strategy for your function. You lead your extended team to achieve a great customer experience by removing road blocks to a truly customer centric culture.</p><p>You lead a complex transformational agenda and are effective at complex stakeholder management across the Group and externally.</p><p>Your outlook is strategic but you can deep dive into the details of your operational business and people as required.</p><p>You proactively drive your area to deliver effective risk management and compliance. </p><p>You lead, coach, inspire and motivate others. Builds change resilience within your area and lead with values.</p>",
     experience: "<div>Manager plus:</div><ul><li>Leading transformational change</li><li>Flexible and connected - proven relationship management</li><li>Innovative thinking and insights</li></ul>",
@@ -390,6 +406,7 @@ var operations = {
 
 var rcd = {
   credit_investigation_analyst: {
+    link: path + '/Documents/RCD_Credit_Investigation_Analyst.pdf',
     family: MODEL_3,
     obj: $('.r1'),
     title: "Credit Investigation Analyst",
@@ -432,6 +449,7 @@ var aroc = {
 
 var analytics = {
   senior_analytics_analyst: {
+    link: path + '/Documents/Analytics_Senior_Analytics_Analyst.pdf',
     family: MODEL_6,
     obj: $('.an1'),
     title: "Senior Analytics Analyst",
@@ -444,6 +462,7 @@ var analytics = {
     capability2: '<ul><li>Understanding Technology</li><li>Creative Problem Solving</li><li>Customer Experience</li></ul>'
   },
   analytics_analyst: {
+    link: path + '/Documents/Analytics_Analytics_Analyst.pdf',
     family: MODEL_6,
     obj: $('.an2'),
     title: "Analytics Analyst",
