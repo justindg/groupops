@@ -120,6 +120,10 @@ table {
   padding: 20px 20px;
 }
 
+#search {
+  display: none;
+  padding: 20px;
+}
 
 .home-content {
   padding: 0 10%;
@@ -465,4 +469,138 @@ table {
 .future-col {
   float: left;
   width: 50%;
+}
+
+.search-box {
+  text-align: center;
+  font-weight: 100;
+  padding: 40px 0;
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.search-label {
+  margin-bottom: 15px;
+}
+
+.search-button {
+  border-radius: 50px;
+  background-color: #FFCC00;
+  color: #555;
+  font-weight: 300;
+  display: inline-block;
+  padding: 10px 40px;
+}
+
+.search-label > span {
+  font-weight: 500;
+  color: #FFCC00;
+}
+
+.search-intro-info {
+  clear: both;
+}
+
+.search-intro {
+  text-align: center;
+  overflow: auto;
+  padding: 20px 0;
+}
+
+.search-intro-header {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.search-intro-steps {
+  margin: 20px 0;
+  overflow: auto;
+}
+
+.search-step {
+  float: left;
+  width: 33.33%;
+}
+
+.search-step-title {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.search-step-subtitle {
+
+}
+
+.search-intro-info {
+  padding: 15px 0;
+}
+
+.search-family {
+  background-color: #555;
+  color: white;
+  overflow: auto;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.search-family-header {
+  font-size: 1.8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  float: left;
+  line-height: 50px;
+}
+
+.search-family-go {
+  float: right;
+  line-height: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  display: none;
+  cursor: pointer;
+}
+
+.search-family-gls {
+
+}
+
+.search-family-container {
+  padding: 40px;
+  background-color: #eee;
+}
+
+.search-family-gls-header {
+  background-color: #54C2E8;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.5em;
+}
+
+.search-family-ps {
+
+}
+
+.search-family-ps-header {
+  background-color: #54C2E8;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1.5em;
+}
+
+.search-family-ps-body {
+  background-color: white;
+  font-weight: 100;
+  padding: 20px 40px;
+}
+
+.search-family-gls-body {
+  background-color: white;
+  font-weight: 100;
+  padding: 20px 40px;
+  margin-bottom: 40px;
 }

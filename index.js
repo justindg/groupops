@@ -5,11 +5,31 @@ var MODEL_4 = 4;
 var MODEL_5 = 5;
 var MODEL_6 = 6;
 
+var currentPage = "home";
+
 $('.model').on('click', function() {
   $('#home').hide();
   $('#page2').show();
   $('.banner-back').show();
   $('.banner-subtext').hide();
+});
+
+$('.banner-back').on('click', function() {
+  if (currentPage==="page2") {
+    $('#home').show();
+    $('#page2').hide();
+    $('.banner-back').hide();
+    $('.banner-subtext').show();
+    $('.banner-subtitle').text("Career Model");
+    $('.banner-title').text("Group Operations");
+    currentPage = "home";
+  } else {
+    $('#page2').show();
+    $('#search').hide();
+    $('.banner-subtitle').text("Career Model");
+    $('.banner-title').text("Group Operations");
+    currentPage = "page2";
+  }
 });
 
 $('.page2-footer-top').on('click', function() {
@@ -25,35 +45,32 @@ var m6 = $('.m6');
 
 m1.on('click', function() {
   th_m1.click();
+  currentPage = "page2";
 });
 
 m2.on('click', function() {
   th_m2.click();
+  currentPage = "page2";
 });
 
 m3.on('click', function() {
   th_m3.click();
+  currentPage = "page2";
 });
 
 m4.on('click', function() {
   th_m4.click();
+  currentPage = "page2";
 });
 
 m5.on('click', function() {
   th_m5.click();
+  currentPage = "page2";
 });
 
 m6.on('click', function() {
   th_m6.click();
-});
-
-$('.banner-back').on('click', function() {
-  $('#home').show();
-  $('#page2').hide();
-  $('.banner-back').hide();
-  $('.banner-subtext').show();
-  $('.banner-subtitle').text("Career Model");
-  $('.banner-title').text("Group Operations");
+  currentPage = "page2";
 });
 
 var deselectMainTableItems = function() {
@@ -125,11 +142,28 @@ var th_m4 = $('.th-m4');
 var th_m5 = $('.th-m5');
 var th_m6 = $('.th-m6');
 
+var showSearchOption = function() {
+  $('#search-operations').show();
+}
+
+var hideSearchOption = function() {
+  $('.search-box').hide();
+}
+
+$('#search-operations').on('click', function() {
+  $('#search').show();
+  $('#page2').hide();
+  currentPage = "search";
+  $('.banner-subtitle').text("Group Operations");
+  $('.banner-title').text("Search");
+});
+
 var selectCol1 = function() {
   deselectMainTableItems();
   $('.main-td-1').addClass('main-td-selected');
   $('.th-m1').addClass('main-th-selected');
   updateFamilyDescription(MODEL_1);
+  hideSearchOption();
 }
 
 var selectCol2 = function() {
@@ -137,6 +171,7 @@ var selectCol2 = function() {
   $('.main-td-2').addClass('main-td-selected');
   $('.th-m2').addClass('main-th-selected');
   updateFamilyDescription(MODEL_2);
+  showSearchOption();
 }
 
 var selectCol3 = function() {
@@ -144,6 +179,7 @@ var selectCol3 = function() {
   $('.main-td-3').addClass('main-td-selected');
   $('.th-m3').addClass('main-th-selected');
   updateFamilyDescription(MODEL_3);
+  hideSearchOption();
 }
 
 var selectCol4 = function() {
@@ -151,6 +187,7 @@ var selectCol4 = function() {
   $('.main-td-4').addClass('main-td-selected');
   $('.th-m4').addClass('main-th-selected');
   updateFamilyDescription(MODEL_4);
+  hideSearchOption();
 }
 
 var selectCol5 = function() {
@@ -158,6 +195,7 @@ var selectCol5 = function() {
   $('.main-td-5').addClass('main-td-selected');
   $('.th-m5').addClass('main-th-selected');
   updateFamilyDescription(MODEL_5);
+  hideSearchOption();
 }
 
 var selectCol6 = function() {
@@ -165,6 +203,7 @@ var selectCol6 = function() {
   $('.main-td-6').addClass('main-td-selected');
   $('.th-m6').addClass('main-th-selected');
   updateFamilyDescription(MODEL_6);
+  hideSearchOption();
 }
 
 th_m1.on('click', function() {
