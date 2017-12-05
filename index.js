@@ -251,7 +251,6 @@ var td_m4 = $('.main-td-4');
 var td_m5 = $('.main-td-5');
 var td_m6 = $('.main-td-6');
 
-
 var updateRoleDescription = function(d) {
   updateFamilyDescription(d.model);
   $('.role-title-text').text(d.title);
@@ -264,22 +263,20 @@ var updateRoleDescription = function(d) {
   $('.capability-content1').html(d.capability);
   $('.capability-content2').html(d.capability2);
 
-  $('.role-download1').on('click', function() {
-    console.log(d.link);
-    window.open = d.link;
-  });
-
-  $('.role-download2').on('click', function() {
-    console.log(d.link);
-    window.open = d.link;
-  });
+  if (d.link) {
+    $('.role-download1').html("<a class='jd' href='"+ d.link +"' target='_blank'>Download Job Description</a>");
+    $('.role-download2').html("<a class='jd' href='"+ d.link +"' target='_blank'>Download Job Description</a>");
+  } else {
+    $('.role-download1').html("Download Job Description");
+    $('.role-download2').html("Download Job Description");
+  }
 };
 
 var scrollToRoleDescription = function() {
   window.location.href = '#role_description';
 }
 
-var path = window.location.pathname;
+var path = "https://mtspro.cba/hr/Group-Operations-Career-Model";
 
 var leadership = {
   executive_manager : {
@@ -429,25 +426,25 @@ var aroc = {
     family: MODEL_4,
     obj: $('.aroc1'),
     title: "Robotics Senior Analyst",
-    purpose: '<p></p>',
-    responsibility: '<p></p>',
-    experience: '<div></div><ul><li></li></ul>',
-    feeder: '<ul><li></li></ul>',
-    future: '<ul><li></li></ul>',
-    capability: '<ul><li></li></ul>',
-    capability2: '<ul><li></li></ul>'
+    purpose: '<p>This role manages the virtual workforce, maintaining deployed robotics capabilities, business volume scaling, load balancing and allocation of software robots to meet agreed SLAs with business units.</p>',
+    responsibility: '<p>You understand business processes in scope for automation to ensure a timely resolution to process exceptions and minimum impact to business teams. You lead the investigation and detailed analysis of process exceptions, inclusding root cause analysis. You resolve process exceptions timely. You configure the Blue Prism software to meet business automation requirements in accordance with AROC governance, framework and best practices and through test cycles, change management and production readiness. You operate within AROC risk profile and in accordance with agile principles. You are accountable for technical on-boarding of automated processes into AROC Maintain team including acceptance criteria for newly automated processes</p>',
+    experience: '<div></div><ul><li>Business analysis</li><li>IT</li><li>Process design</li><li>Consulting</li></ul>',
+    feeder: '<ul><li>Robotics Analyst</li><li>IT Developer</li><li>IT Tester</li></ul>',
+    future: '<ul><li>Senior Automation Analyst</li><li>Other emerging roles in AROC</li><li>Leadership roles</li></ul>',
+    capability: '<ul><li>Technical excellence</li><li>Understanding Data</li><li>Stakeholder management</li><li>Creative Problem Solving</li></ul>',
+    capability2: '<ul><li>Effective communication</li><li>Growth Mindset and learning agility</li><li>Resilience</li></ul>'
   },
-  robotics_analyst: {
+  automation_senior_analyst: {
     family: MODEL_4,
     obj: $('.aroc2'),
-    title: "Robotics Analyst",
-    purpose: '<p></p>',
-    responsibility: '<p></p>',
-    experience: '<div></div><ul><li></li></ul>',
-    feeder: '<ul><li></li></ul>',
-    future: '<ul><li></li></ul>',
-    capability: '<ul><li></li></ul>',
-    capability2: '<ul><li></li></ul>'
+    title: "Automation Senior Analyst",
+    purpose: '<p>This role will understand business needs, requirements and use cases to facilitate and scope a feasible automation solution to the business. Developing and presenting appropriate recommendations to automations and robotics stakeholders in support of superior customer outcomes.</p>',
+    responsibility: '<p>You understand the business context and drivers that contribute to successful performance. You gather and synthetize large amount of data from various sources. You work with agile principles to scope a feasible automation solution to the business in conjunction with other roles in AROC. You workshop and document automation requirements with SME, Risk, and process owners. You operate within AROC risk profile and in accordance with agile principles.</p>',
+    experience: '<div></div><ul><li>Business analysis</li><li>Agile project experience</li><li>Technology change programs</li><li>Technical understanding of Paga, BluePrism, OCR</li></ul>',
+    feeder: '<ul><li>Automation Analyst</li><li>Robotics Analyst</li></ul>',
+    future: '<ul><li>Robotics Process Controller</li><li>Senior Robotics Analyst</li><li>Leadership roles </li></ul>',
+    capability: '<ul><li>Technical excellence</li><li>Understanding Data</li><li>Stakeholder management</li><li>Creative Problem Solving</li></ul>',
+    capability2: '<ul><li>Effective communication</li><li>Growth Mindset and learning agility</li><li>Resilience</li></ul>'
   },
 }
 
@@ -456,7 +453,7 @@ var analytics = {
     link: path + '/Documents/Analytics_Senior_Analytics_Analyst.pdf',
     family: MODEL_6,
     obj: $('.an1'),
-    title: "Senior Analytics Analyst",
+    title: "Analytics Senior Analyst",
     purpose: '<p>This role will deliver actionable and utilise advanced analytical skills to allow the business to maximise profitable growth and customer satisfaction outcomes using analytical tools (e.g. SQL, Teradata, R) in conjunction with large data sets. Providing proactive analysis and insights will help maximize our customer experience and enable leaders and colleagues to make data driven decisions.</p>',
     responsibility: '<p>You deliver insights and analytical model in a timely manner and ensure follow up by your stakeholders. You innovate and optimise by providing proactive technical and business optimization solutions complex business problems. The data and insights you provide helps support leaders make data driven decisions.  </p>',
     experience: '<div>Analytics Analyst plus:</div><ul><li>Deep cross business experience</li><li>Knowledge thinking/analytics</li></ul>',
@@ -560,6 +557,16 @@ operations.sme.obj.on('click', function() {
 rcd.credit_investigation_analyst.obj.on('click', function() {
   updateRoleDescription(rcd.credit_investigation_analyst);
   selectCol3();
+});
+
+aroc.robotics_senior_analyst.obj.on('click', function() {
+  updateRoleDescription(aroc.robotics_senior_analyst);
+  selectCol4();
+});
+
+aroc.automation_senior_analyst.obj.on('click', function() {
+  updateRoleDescription(aroc.automation_senior_analyst);
+  selectCol4();
 });
 
 analytics.senior_analytics_analyst.obj.on('click', function() {
