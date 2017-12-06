@@ -478,10 +478,10 @@ var analytics = {
 }
 
 var process_architecture = {
-  team_leader: {
+  process_architecture_em: {
     family: MODEL_5,
     obj: $('.pa1'),
-    title: "??",
+    title: "Process Architecture EM",
     purpose: '<p></p>',
     responsibility: '<p></p>',
     experience: '<div></div><ul><li></li></ul>',
@@ -490,10 +490,10 @@ var process_architecture = {
     capability: '<ul><li></li></ul>',
     capability2: '<ul><li></li></ul>'
   },
-  team_leader: {
+  process_architecture_manager: {
     family: MODEL_5,
     obj: $('.pa2'),
-    title: "??",
+    title: "Process Architecture Manager",
     purpose: '<p></p>',
     responsibility: '<p></p>',
     experience: '<div></div><ul><li></li></ul>',
@@ -567,6 +567,16 @@ aroc.robotics_senior_analyst.obj.on('click', function() {
 aroc.automation_senior_analyst.obj.on('click', function() {
   updateRoleDescription(aroc.automation_senior_analyst);
   selectCol4();
+});
+
+process_architecture.process_architecture_em.obj.on('click', function() {
+  updateRoleDescription(process_architecture.process_architecture_em);
+  selectCol6();
+});
+
+process_architecture.process_architecture_manager.obj.on('click', function() {
+  updateRoleDescription(process_architecture.process_architecture_manager);
+  selectCol6();
 });
 
 analytics.senior_analytics_analyst.obj.on('click', function() {
