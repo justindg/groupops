@@ -105,7 +105,7 @@ var families = {
   },
   process_architecture :{
     title: "Process Architecture",
-    description: "Process Architecture designs and delivers transformational customer experiences with processes and digital assets that can be reused and standardized across the Group. If you believe process centricity can add value to the Group and our customers and are an excellent collaborator, check  out our exciting roles."
+    description: "Process Architecture designs and delivers transformational customer experiences with processes that can be reused and standardized across the Group. If you believe process centricity can add value to the Group and our customers and are an excellent collaborator, check  out our exciting roles."
   },
   analytics :{
     title: "Analytics",
@@ -257,7 +257,12 @@ var updateRoleDescription = function(d) {
   $('.link').text(d.link);
   $('.purpose-body').html(d.purpose);
   $('.responsibility-body').html(d.responsibility);
-  $('.experience-body').html(d.experience);
+  if (d.experience) {
+    $('.experience').show();
+    $('.experience-body').html(d.experience);
+  } else {
+    $('.experience').hide();
+  }
   $('.future-content').html(d.future);
   $('.feeder-content').html(d.feeder);
   $('.capability-content1').html(d.capability);
@@ -482,25 +487,25 @@ var process_architecture = {
     family: MODEL_5,
     obj: $('.pa1'),
     title: "Process Architecture EM",
-    purpose: '<p></p>',
-    responsibility: '<p></p>',
-    experience: '<div></div><ul><li></li></ul>',
-    feeder: '<ul><li></li></ul>',
-    future: '<ul><li></li></ul>',
-    capability: '<ul><li></li></ul>',
-    capability2: '<ul><li></li></ul>'
+    purpose: '<p>This role will engage with internal customers in the Group (RBS, BPB, IB&M..) to translate the customer experience into standard, highly efficient and end to end Group processes that meet or exceed that experience. This role applies a Design Thinking and data analytics approach to ensure that processes are simple, standardized and adhere to our process governance principles and catalogue classification. The scope of work is typically medium term and strategic in nature as it contributes to our Group wide process centric strategy.</p>',
+    responsibility: '<ul><li>Provide thought leadership and subject matter expertise in process architecture on key strategic programs across the Group</li><li>Apply Design Thinking, data analytics and a customer lead approach to create and implement the process target state in close partnership with the business</li><li>Ensure processes are effectively designed and business outcomes understood and agreed</li><li>Ensure process design incorporates appropriate preventative controls and sound risk principles</li><li>Standardize and simplify processes to enable future automation and digitization</li></ul>',
+    // experience: '<div></div><ul><li></li></ul>',
+    feeder: '<ul><li>Process Architecture Manager</li><li>Productivity Manager/EM</li><li>Manage/EM OCM</li></ul>',
+    future: '<ul><li>EM Operations</li><li>EM Productivity</li><li>GM Process Management & Improvement</li></ul>',
+    capability: '<ul><li>Negotiation</li><li>Analytics</li><li>Change Management</li><li>People Leadership</li></ul>',
+    capability2: '<ul><li>Senior Stakeholder management</li><li>Customer focus and Design Thinking</li><li>Commercial acumen</li><li>Project Governance</li></ul>'
   },
   process_architecture_manager: {
     family: MODEL_5,
     obj: $('.pa2'),
     title: "Process Architecture Manager",
-    purpose: '<p></p>',
-    responsibility: '<p></p>',
-    experience: '<div></div><ul><li></li></ul>',
-    feeder: '<ul><li></li></ul>',
-    future: '<ul><li></li></ul>',
-    capability: '<ul><li></li></ul>',
-    capability2: '<ul><li></li></ul>'
+    purpose: '<p>This role will  work closely with the EM Process Architecture to ensure execution and traction of strategic process design and implementation programs across internal customers (RBS, BPB, IB&M). The purpose of these programs is to create highly efficient, standardized and risk sound processes to exceed the expectations of our customers.  This role applies a Design Thinking approach, works very collaboratively across the Group to gather and workshop requirements and then apply process architecture methodologies and standards to design the target state processes.</p>',
+    responsibility: '<ul><li>Apply Design Thinking, data analytics and a customer led approach and work collaboratively across our internal customers to workshop current and future state of in scope processes</li><li>Ensure requirements are understood and documented clearly</li><li>Ensure proposed processes follow design principles and adhere to the processes standards set out by the Process Architecture Governance Forum</li><li>Educate internal customers and leverage the Process Knowledge Warehouse (PKW) as a Group asset</li><li>Apply and incorporate appropriate preventative controls and sound risk principles to proposed target state processes</li></ul>',
+    // experience: '<div></div><ul><li></li></ul>',
+    feeder: '<ul><li>Process Architecture Analyst</li><li>Analytics Manager</li><li>Productivity Manager/EM</li></ul>',
+    future: '<ul><li>EM Process Architecture</li><li>EM Productivity</li><li>Manager/EM Risk</li></ul>',
+    capability: '<ul><li>Business requirements gathering</li><li>Analytics</li><li>Stakeholder management</li><li>Influencing </li></ul>',
+    capability2: '<ul><li>Customer focus and Design Thinking</li><li>Commercial acumen</li><li>Project Management</li><li>Change Resilience </li></ul>'
   },
 }
 
