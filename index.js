@@ -301,6 +301,7 @@ var leadership = {
     family: MODEL_1,
     obj: $('.l2'),
     title: "Manager",
+    link: path + '/Documents/Leadership_Manager.pdf',
     purpose: '<p>This is a manager of managers role and its emphasis is team management and operational  business management. The Manager role ensures the tam is focused on delivering a great customer experience and driving execution of processes in an efficient, effective and risk aware way.</p>',
     responsibility: '<p>As a second line manager, you ensure the organization under your span of control executes work volumes, proactively manages and anticipates operational risks and has the flexibility of resources to deliver performance outcomes for the product or the services in scope. Your focus is equally split between leading and coaching leaders and leading business processing. You drive and empower your team to create a great customer experience while at the same time meeting financial and risk objectives.</p><p>You embed a values based culture, manage change, build resilience within your team and inspire the team to continually improve. You proactively lead teams to deliver effective risk management and compliance. You build change resilience within teams and create motivation for change.</p>',
     experience: '<div>Team Leader plus:</div><ul><li>Performance Driven record with customer focus in large teams/areas</li><li>Resilient, leading motivational change</li><li>Demonstrates values based leadership</li></ul>',
@@ -313,6 +314,7 @@ var leadership = {
     family: MODEL_1,
     obj: $('.l3'),
     title: "Team Leader",
+    link: path + '/Documents/Leadership_Team_Leader.pdf',
     purpose: '<p>The emphasis of this role is on people management and operational management focusing on reliable and efficient execution of processes with particular attention to customer experience and risk management.</p>',
     responsibility: '<p>You drive the performance of your team in terms of outputs and  customer experience on a daily basis. You lead  a values based culture. You inspire colleagues to drive continuous improvement in service of the customer experience. You lead for customer outcomes and build a customer centric culture. You ensure the team follows all risk management and compliance requirements. You manage change and coach and motivate your team through it.</p>',
     experience: '<ul><li>Proven track record of driving performance with customer focus</li><li>Change enabler</li><li>Adaptability and innovative thinking</li><li>Lives values</li></ul>',
@@ -328,6 +330,7 @@ var operations = {
     family: MODEL_2,
     obj: $('.o1'),
     title: "Advanced Operations",
+    link: path + '/Documents/Operations_Officer_Customer_Service_Specialist.pdf',
     purpose: '<p>Delivering great customer experiences for a range of highly variable products and services. May entail supervisory responsibility for the work of others including escalations, exceptions and complex cases. The emphasis of this role is on execution.</p>',
     responsibility: '<p>You are the operations professional who make things happen in an efficient and risk aware way. Advanced processing involving  complex data, investigations and technical expertise. Reliance on acquired knowledge and learning. Able to apply knowledge/problem solving strategies to resolve unfamiliar problems within area of responsibility. Can provide recommendations to support escalations for more complex issues. Provides specialist advice and solutions to stakeholders.</p>',
     experience: '<div>Complex Operations plus</div><ul><li>Expert in technical area</li><li>Innovative thinking/insights</li><li>Change resilient, leading motivational change</li></ul>',
@@ -340,6 +343,7 @@ var operations = {
     family: MODEL_2,
     obj: $('.o2'),
     title: "Complex Operations",
+    link: path + '/Documents/Operations_Officer_Customer_Service_Specialist.pdf',
     purpose: '<p>Delivering great customer experiences for a broad range products and services. May entail supervisory responsibility for the work of others including escalations, exceptions and complex cases. The emphasis of this role is on execution.</p>',
     responsibility: '<p>You are the operations professional who make things happen in an efficient and risk aware way. Complex processing at times applying acquired knowledge to supplement SOPs. Accountable for own work, may have accountability for others. Able to resolve for common problems using acquired learning. Coaches others to increase technical competence. Representative for projects/stakeholders meetings. Provides specialist advice and solutions to stakeholders.</p>',
     experience: '<div>Standard Operations plus:</div><ul><li>Deep cross business experience</li><li>Knowledge thinking/analytics</li></ul>',
@@ -351,6 +355,7 @@ var operations = {
   standard_operations: {
     family: MODEL_2,
     obj: $('.o3'),
+    link: path + '/Documents/Operations_Officer_Customer_Service_Specialist.pdf',
     title: "Standard Operations",
     purpose: '<p>Delivering great customer experiences for a range of operational work routines and procedures and may be a point of reference for some aspects of work. The emphasis of this role is on execution.</p>',
     responsibility: '<p>You are the operations professional who make things happen in an efficient and risk aware way. Processing following an SOP most of the time, some discretion for problem solving on mainly familiar problems. Accountable for own work as part of a team, may have some oversight of others. Able to resolve familiar problems within a defined scope and with clear point of escalation in place.</p>',
@@ -364,6 +369,7 @@ var operations = {
     family: MODEL_2,
     obj: $('.o4'),
     title: "Operations",
+    link: path + '/Documents/Operations_Officer_Customer_Service_Specialist.pdf',
     purpose: '<p>Delivering great customer experiences for a range of routine  operational work procedures. The emphasis of this role is on execution.</p>',
     responsibility: '<p>You are the operations professional who make things happen in an efficient and risk aware way.  Processing following a SOP. Some limited discretion for familiar problem solving from a limited range of solutions. Accountable for own work as part of a team to meet output requirements. Escalates problems outside of SOPs and documented solutions.</p>',
     experience: '<ul><li>Customer focused</li><li>Embraces Change</li><li>Self motivated</li></ul>',
@@ -375,6 +381,7 @@ var operations = {
   specialized_sme: {
     family: MODEL_2,
     obj: $('.o5'),
+    link: path + '/Documents/Operations_SME.pdf',
     title: "Specialized SME",
     purpose: '<p>The emphasis of this role is on sharing process knowledge, process  variations and analysis of root causes to deliver exceptional customer outcomes.</p><p>To provide deep product and process knowledge to improve experiences for our employees and customers. SME to represent a team and lead project work, continuous improvement initiatives and problem solving relating to the product/process. This role can stand in for, and has the decision making authority of a Manager.</p>',
     responsibility: '<ul><li>Will develop and implement agreed changes to process including testing, roll out planning, risk control, employee training/coaching, stakeholder mgt etc.</li><li>Will coach employees as needed with complex work items and changes to process and policy.</li><li>Will provide input/decisions on policy and process changes.</li><li>Reference point for escalation from Managers/EMs with decision making authority equivalent to a Manager.</li></ul>',
@@ -387,6 +394,7 @@ var operations = {
   advanced_sme: {
     family: MODEL_2,
     obj: $('.o6'),
+    link: path + '/Documents/Operations_SME.pdf',
     title: "Advanced SME",
     purpose: '<p>The emphasis of this role is on sharing process knowledge, process  variations and analysis of root causes to deliver exceptional customer outcomes.</p><p>To be a business reference point for complex escalations from Team Leaders/Managers and their teams related to product and process along with day to day technical product and process support to the Manage & team to enhance employee and customer experiences. This role can stand in for, and has the decision making authority of a Team Leader.</p>',
     responsibility: '<ul><li>Assisting the Team leader or Manager in analysing team work performance</li><li>Completes audits of platform data, complex data investigations</li><li>Will coach employees as needed with complex work items and changes to process and policy</li><li>Will represent at project meetings, to problem solves issues</li><li>Coaching team members through the provision of subject matter expertise, observation and feedback</li><li>Will update/maintain process document/SOPs</li></ul>',
@@ -399,6 +407,7 @@ var operations = {
   sme: {
     family: MODEL_2,
     obj: $('.o7'),
+    link: path + '/Documents/Operations_SME.pdf',
     title: "SME",
     purpose: '<p>The emphasis of this role is on sharing process knowledge, process  variations and analysis of root causes to deliver exceptional customer outcomes.</p><p>To be a business reference point for escalations from Team members related to product and process along with day to day technical product and process support to the Team Leader/Manager. This role aims to enhance the employee and customer experience by responding to and managing customer and stakeholder enquiries, complaints and issues.</p>',
     responsibility: '<ul><li>Is a reference point for complex processing escalations from Team Members</li><li>Reference point for projects requiring in-depth knowledge of process and product</li><li>Provide recommendations to the Manager on opportunities to improve the processes based on outcomes of investigations and data reference points</li><li>Undertaking investigations in respect to customer requests and/or as a result of transactional or exception based issues</li></ul>',
@@ -430,6 +439,7 @@ var aroc = {
   robotics_senior_analyst: {
     family: MODEL_4,
     obj: $('.aroc1'),
+    link: path + '/Documents/AROC_Robotics_Snr_Analyst.pdf',
     title: "Robotics Senior Analyst",
     purpose: '<p>This role manages the virtual workforce, maintaining deployed robotics capabilities, business volume scaling, load balancing and allocation of software robots to meet agreed SLAs with business units.</p>',
     responsibility: '<p>You understand business processes in scope for automation to ensure a timely resolution to process exceptions and minimum impact to business teams. You lead the investigation and detailed analysis of process exceptions, inclusding root cause analysis. You resolve process exceptions timely. You configure the Blue Prism software to meet business automation requirements in accordance with AROC governance, framework and best practices and through test cycles, change management and production readiness. You operate within AROC risk profile and in accordance with agile principles. You are accountable for technical on-boarding of automated processes into AROC Maintain team including acceptance criteria for newly automated processes</p>',
@@ -442,6 +452,7 @@ var aroc = {
   automation_senior_analyst: {
     family: MODEL_4,
     obj: $('.aroc2'),
+    link: path + '/Documents/AROC_Snr_Automation_Analyst.pdf',
     title: "Automation Senior Analyst",
     purpose: '<p>This role will understand business needs, requirements and use cases to facilitate and scope a feasible automation solution to the business. Developing and presenting appropriate recommendations to automations and robotics stakeholders in support of superior customer outcomes.</p>',
     responsibility: '<p>You understand the business context and drivers that contribute to successful performance. You gather and synthetize large amount of data from various sources. You work with agile principles to scope a feasible automation solution to the business in conjunction with other roles in AROC. You workshop and document automation requirements with SME, Risk, and process owners. You operate within AROC risk profile and in accordance with agile principles.</p>',
@@ -486,6 +497,7 @@ var process_architecture = {
   process_architecture_em: {
     family: MODEL_5,
     obj: $('.pa1'),
+    link: path + '/Documents/ProcessArchitecture_EM_Process_Architecture.pdf',
     title: "Process Architecture EM",
     purpose: '<p>This role will engage with internal customers in the Group (RBS, BPB, IB&M..) to translate the customer experience into standard, highly efficient and end to end Group processes that meet or exceed that experience. This role applies a Design Thinking and data analytics approach to ensure that processes are simple, standardized and adhere to our process governance principles and catalogue classification. The scope of work is typically medium term and strategic in nature as it contributes to our Group wide process centric strategy.</p>',
     responsibility: '<ul><li>Provide thought leadership and subject matter expertise in process architecture on key strategic programs across the Group</li><li>Apply Design Thinking, data analytics and a customer lead approach to create and implement the process target state in close partnership with the business</li><li>Ensure processes are effectively designed and business outcomes understood and agreed</li><li>Ensure process design incorporates appropriate preventative controls and sound risk principles</li><li>Standardize and simplify processes to enable future automation and digitization</li></ul>',
@@ -498,6 +510,7 @@ var process_architecture = {
   process_architecture_manager: {
     family: MODEL_5,
     obj: $('.pa2'),
+    link: path + '/Documents/ProcessArchitecture_Manager_Process_Architecture.pdf',
     title: "Process Architecture Manager",
     purpose: '<p>This role will  work closely with the EM Process Architecture to ensure execution and traction of strategic process design and implementation programs across internal customers (RBS, BPB, IB&M). The purpose of these programs is to create highly efficient, standardized and risk sound processes to exceed the expectations of our customers.  This role applies a Design Thinking approach, works very collaboratively across the Group to gather and workshop requirements and then apply process architecture methodologies and standards to design the target state processes.</p>',
     responsibility: '<ul><li>Apply Design Thinking, data analytics and a customer led approach and work collaboratively across our internal customers to workshop current and future state of in scope processes</li><li>Ensure requirements are understood and documented clearly</li><li>Ensure proposed processes follow design principles and adhere to the processes standards set out by the Process Architecture Governance Forum</li><li>Educate internal customers and leverage the Process Knowledge Warehouse (PKW) as a Group asset</li><li>Apply and incorporate appropriate preventative controls and sound risk principles to proposed target state processes</li></ul>',
