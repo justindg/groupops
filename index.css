@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Regular";
-  src: url('/fonts/Roboto-Regular.ttf');
+  src: url('./fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
   font-family: "Thin";
-  src: url('/fonts/Roboto-Thin.ttf');
+  src: url('./fonts/Roboto-Thin.ttf');
 }
 
 @font-face {
   font-family: "Medium";
-  src: url('/fonts/Roboto-Medium.ttf');
+  src: url('./fonts/Roboto-Medium.ttf');
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Regular", sans-serif;
   width: 100%;
   font-size: 16px;
   margin: 0;
@@ -39,17 +39,17 @@ body {
 }
 
 b {
-  font-weight: 500;
+  font-family: "Medium";
 }
 
 a {
   color: #54C2E8;
-  font-weight: 500;
+  font-family: "Medium";
   text-decoration: none;
 }
 
 p {
-  font-weight: 100;
+  font-family: "Thin";
   margin: 0;
   margin: 10px 0;
   font-size: 1em;
@@ -119,13 +119,13 @@ table {
 }
 
 .banner-title {
-  font-weight: 500;
+  font-family: "Medium";
   font-size: 2.7em;
   /*margin-bottom: 5px;*/
 }
 
 .banner-subtitle {
-  font-weight: 500;
+  font-family: "Medium";
   font-size: 2em;
 }
 
@@ -234,7 +234,7 @@ table {
 .model-text {
   padding: 5px;
   box-sizing: border-box;
-  font-weight: 500;
+  font-family: "Medium";
 }
 
 .model-more {
@@ -268,7 +268,7 @@ table {
 
 .main-table tbody tr th {
   text-transform: uppercase;
-  font-weight: 500;
+  font-family: "Medium";
   text-align: center;
   vertical-align: bottom;
   border-bottom: 1px solid black;
@@ -318,7 +318,7 @@ table {
 .main-item {
   border-radius: 8px;
   background-color: #54C2E8;
-  font-weight: 500;
+  font-family: "Medium";
   color: white;
   text-align: center;
   position: relative;
@@ -348,7 +348,7 @@ table {
 
 .main-item-empty {
   border-radius: 8px;
-  font-weight: 500;
+  font-family: "Medium";
   color: white;
   text-align: center;
   position: relative;
@@ -391,7 +391,7 @@ table {
 .role-title-text {
   float: left;
   font-size: 1.8em;
-  font-weight: 500;
+  font-family: "Medium";
   box-sizing: border-box;
   line-height: 50px;
 }
@@ -403,7 +403,7 @@ table {
   text-align: center;
   color: black;
   font-size: 0.9em;
-  font-weight: 500;
+  font-family: "Medium";
   padding: 0px 30px;
   border-radius: 50px;
   cursor: pointer;
@@ -417,7 +417,7 @@ table {
   text-align: center;
   color: black;
   font-size: 0.9em;
-  font-weight: 500;
+  font-family: "Medium";
   padding: 0px 30px;
   border-radius: 50px;
   cursor: pointer;
@@ -433,11 +433,11 @@ table {
   background-color: #54C2E8;
   margin: 0 40px;
   text-align: left;
-  font-weight: 500;
+  font-family: "Medium";
 }
 
 .role-body {
-  font-weight: 100;
+  font-family: "Thin";
   font-size: 1em;
   color: black;
   padding: 20px 40px;
@@ -476,7 +476,7 @@ table {
 }
 
 .feeder-col-header {
-  font-weight: 500;
+  font-family: "Medium";
   margin-bottom: 5px;
 }
 
@@ -492,7 +492,7 @@ table {
 
 .search-box {
   text-align: center;
-  font-weight: 100;
+  font-family: "Thin";
   padding: 40px 0;
   background-color: #f8f8f8;
   margin-bottom: 20px;
@@ -507,13 +507,13 @@ table {
   border-radius: 50px;
   background-color: #FFCC00;
   color: #555;
-  font-weight: 300;
+  font-family: "Regular";
   display: inline-block;
   padding: 10px 40px;
 }
 
 .search-label > span {
-  font-weight: 500;
+  font-family: "Medium";
   color: #FFCC00;
 }
 
@@ -529,7 +529,7 @@ table {
 
 .search-intro-header {
   font-size: 1.5em;
-  font-weight: 500;
+  font-family: "Medium";
   padding: 15px;
 }
 
@@ -545,7 +545,7 @@ table {
 
 .search-step-title {
   font-size: 1.2em;
-  font-weight: 500;
+  font-family: "Medium";
 }
 
 .search-step-subtitle {
@@ -566,7 +566,7 @@ table {
 
 .search-family-header {
   font-size: 1.8em;
-  font-weight: 500;
+  font-family: "Medium";
   box-sizing: border-box;
   float: left;
   line-height: 50px;
@@ -613,13 +613,13 @@ table {
 
 .search-family-ps-body {
   background-color: white;
-  font-weight: 100;
+  font-family: "Thin";
   padding: 20px 40px;
 }
 
 .search-family-gls-body {
   background-color: white;
-  font-weight: 100;
+  font-family: "Thin";
   padding: 20px 40px;
   margin-bottom: 40px;
 }
